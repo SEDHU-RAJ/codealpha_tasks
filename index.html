@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Interactive Gallery</h1>
+
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="tech">Technology</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/10/800/600" alt="Forest Mountains">
+                <div class="overlay"><span>Nature Vista</span></div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1011/800/600" alt="Classic Architecture">
+                <div class="overlay"><span>Historic Bay</span></div>
+            </div>
+            <div class="gallery-item" data-category="tech">
+                <img src="https://picsum.photos/id/0/800/600" alt="Laptop Working">
+                <div class="overlay"><span>Tech Workspace</span></div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/28/800/600" alt="Forest Path">
+                <div class="overlay"><span>Woodland Path</span></div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1031/800/600" alt="Modern Building">
+                <div class="overlay"><span>Structure Details</span></div>
+            </div>
+            <div class="gallery-item" data-category="tech">
+                <img src="https://picsum.photos/id/60/800/600" alt="Desktop Setup">
+                <div class="overlay"><span>Developer Setup</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
